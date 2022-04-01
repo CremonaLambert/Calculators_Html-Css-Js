@@ -1,0 +1,40 @@
+
+.container {
+    background-color: rgb(12, 12, 37);
+    max-width: 400px;
+    margin: 200px auto;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid rgb(248, 2, 2);
+    color: rgb(230, 7, 7);
+}
+
+.board {
+    background-color: azure;
+    padding: 30px;
+    margin:20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    
+    
+}
+
+.item {
+    /*background-color: rgb(99, 99, 204);*/
+    border: 1px solid #fff;
+}
+
+.bts {
+    /*background-color: rgb(82, 82, 155);*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    border: 2px solid #fff;
+    /*border-radius: 20px;*/
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+h1 {
+    text-align: center;
+}

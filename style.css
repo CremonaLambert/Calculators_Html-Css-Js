@@ -1,4 +1,7 @@
 
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
 .container {
     background-color: rgb(12, 12, 37);
     max-width: 400px;
@@ -6,7 +9,7 @@
     height: auto;
     border-radius: 20px;
     border: 2px solid rgb(248, 2, 2);
-    color: rgb(230, 7, 7);
+    color: rgb(248, 2, 2);
 }
 
 .board {
@@ -20,8 +23,11 @@
 }
 
 .item {
-    /*background-color: rgb(99, 99, 204);*/
+    background-color: rgb(170, 170, 219);
     border: 1px solid #fff;
+    border-radius: 20px;
+    border: 1px solid rgb(248, 2, 2);
+
 }
 
 .bts {
@@ -33,6 +39,7 @@
     /*border-radius: 20px;*/
     max-width: 350px;
     margin: 10px auto;
+    gap: 10px;
 }
 
 h1 {

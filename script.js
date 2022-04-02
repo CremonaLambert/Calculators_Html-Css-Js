@@ -1,3 +1,4 @@
+
 (function(){
     let screen = document.querySelector('.board');
     let buttons = document.querySelectorAll('.item');
@@ -6,9 +7,9 @@
 
      buttons.forEach(function(item){
          item.addEventListener('click', function(e) {
-             let value = e.target.item;
-             screen.value += value;
+            screen.innerHTML = e.target.innerHTML
          })
      });
 
-})();
+})()
+

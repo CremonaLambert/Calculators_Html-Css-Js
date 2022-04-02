@@ -1,12 +1,14 @@
-let display = document.getElementById('display');
-let item = document.getElementsByClassName('item');
-let item = Array.from (document.getElementsByClassName('item'));
+(function(){
+    let screen = document.querySelector('.board');
+    let buttons = document.querySelectorAll('.item');
+    let clear = document.querySelector('.clear');
+    let equal = document.querySelector('.equal');
 
-item.map (item => {
-    item.addEventListener ('click', (e) => {
-        switch(e.target.innerText){
-            default:
-                display.innerText += e.target.innerText;
-        }
-    });
-});
+     buttons.forEach(function(item){
+         item.addEventListener('click', function(e) {
+             let value = e.target.item;
+             screen.value += value;
+         })
+     });
+
+})();

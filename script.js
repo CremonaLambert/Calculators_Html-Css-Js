@@ -4,6 +4,9 @@
     let buttons = document.querySelectorAll('.item');
     let clear = document.querySelector('.clear');
     let equal = document.querySelector('.equal');
+    let del = document.getElementById('del');
+
+    // getting values from each button per click.
 
      buttons.forEach(function(item){
          item.addEventListener('click', function(e) {
@@ -13,17 +16,19 @@
          })
      });
 
-    //  let Result = document.getElementsByClassName('board');
-    //  let calcul = (Number) => {
-    //     Result.innerHTML = Result.innerHTML + Number;
-    //     Result.innerHTML = eval(Result.innerHTML);
-    //     console.log(Result.innerHTML);
-    //  }
-
-     function clean(){
-        let clean = document.getElementById('clean');
+    // how to setup clear button on click
+    
+    clear.addEventListener('click', function(e){
         screen.innerHTML = "";
-     }
+    })
 
+    //how to setup a delete button action on click
+
+    del.addEventListener('click', function(e){
+        let result = screen.innerHTML
+        screen.innerHTML = result.slice(0,-4);
+    })
+    
+     
 })()
 
